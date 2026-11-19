@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Mansão </title>
+
+    <style>
+        body {
+            background: #560e5f;
+            color: rgb(236, 234, 243);
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .painel {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #6d1766;
+            border-radius: 15px;
+        }
+
+        /* Imagem JPEG */
+        .foto {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Imagem SVG */
+        .icone {
+            width: 100px;
+        }
+
+        /* Imagem PNG */
+        #logo {
+            width: 100px;
+        }
+
+        /* Imagem GIF */
+        #gif {
+            width: 100px;
+        }
+
+        button {
+            background: #00ff40;
+            color: #010914;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="painel">
+
+        <h2>Mansão</h2>
+
+        <!-- JPEG: fotografia da sala -->
+        <img src="images (2).jpg" class="foto" alt="Sala de estar">
+
+        <br><br>
+
+        <!-- SVG: ícone vetorial -->
+        <img src="lamp-svgrepo-com.svg" class="icone" alt="Ícone de lâmpada">
+
+        <h1>Luz da Sala</h1>
+
+    
+        
+
+        <br>
+
+        <!-- GIF: imagem animada -->
+        <img src="Captura_de_tela_2026-11-03_201205-removebg-preview.png" id="gif" alt="Brilho animado">
+
+        <br><br>
+
+        <button onclick="document.getElementById('gif').src='giphy.gif'">Ligar luz</button>
+
+        <button onclick="document.getElementById('gif').src='Captura_de_tela_2026-11-03_201205-removebg-preview.png'">Luz desligada</button>
+
+    </div>
+</body>
+</html>
